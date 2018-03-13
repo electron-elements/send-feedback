@@ -10,7 +10,7 @@
   "scripts": {
     "lint": "eslint . --cache",
     "lint-fix": "eslint . --fix --cache",
-    "start": "electron demo/main.js"
+    "start": "electron example-app/main.js"
   },
   "keywords": [
     "send-feedback",
