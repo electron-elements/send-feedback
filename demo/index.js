@@ -1,6 +1,6 @@
-const ReportIssue = require('../lib');
-const reportIssue = document.querySelector('report-issue');
-const templates = ReportIssue.templates;
+const SendFeedback = require('../lib');
+const reportIssue = document.querySelector('send-issue-feedback');
+const templates = SendFeedback.templates;
 
-customElements.define('report-issue', ReportIssue);
-reportIssue.reportIssueURL = 'https://github.com/cPhost/report-issue/issues/new'
+customElements.define('send-issue-feedback', SendFeedback);
+reportIssue.reportIssueURL = 'https://github.com/cPhost/send-feedback/issues/new'

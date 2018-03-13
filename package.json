@@ -1,11 +1,11 @@
 {
-  "name": "report-issue",
+  "name": "send-feedback",
   "version": "1.0.0",
   "description": "Report issue - custom element for electron apps",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cPhost/report-issue.git"
+    "url": "git+https://github.com/cPhost/send-feedback.git"
   },
   "scripts": {
     "lint": "eslint . --cache",
@@ -13,16 +13,16 @@
     "start": "electron demo/main.js"
   },
   "keywords": [
-    "report-issue",
+    "send-feedback",
     "electron",
     "custom elements"
   ],
   "author": "cPhost",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cPhost/report-issue/issues"
+    "url": "https://github.com/cPhost/send-feedback/issues"
   },
-  "homepage": "https://github.com/cPhost/report-issue#readme",
+  "homepage": "https://github.com/cPhost/send-feedback#readme",
   "devDependencies": {
     "electron": "^1.8.3",
     "eslint": "^4.18.2",
