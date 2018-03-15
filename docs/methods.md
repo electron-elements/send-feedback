@@ -17,8 +17,8 @@ A property that you can set to add custom css.
 
 #### `useReporter`
 
-`useReporter(function)` or
-`useReporter(string, data)`
+`useReporter(reporter: function)` or
+`useReporter(defaultReporter: string, data: object)`
 
 You can pass in custom reporter that will be called with logs, body and title.
 logs are formatted as `{ filepath: fileContent }` filepath is whatever was pushed to [`logs`](#logs)
