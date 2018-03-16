@@ -14,9 +14,9 @@ describe('send-feedback', () => {
   const submitBtn = sendFeedback.shadowRoot.querySelector('button');
 
   it('should have default set correctly', () => {
-    assert.deepStrictEqual(title.innerText, 'Send feedback');
+    assert.deepStrictEqual(title.innerText, 'Send Feedback');
     assert.deepStrictEqual(titleLabel.innerText, 'Title');
-    assert.deepStrictEqual(titleInput.getAttribute('placeholder'), 'Enter title');
+    assert.deepStrictEqual(titleInput.getAttribute('placeholder'), 'Enter a title');
     assert.deepStrictEqual(textareaLabel.innerText,
       'Send us your experience with this app:');
     assert.deepStrictEqual(textarea.getAttribute('placeholder'),
