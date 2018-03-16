@@ -28,7 +28,7 @@ Once you fell like designs are in place or you like the default designs.
 You need to use a `reporter` by calling `sendFeedback.useReporter`, for this example lets use
 the `githubReporter`. A reporter is what gets called when the submit/send button is clicked.
 There are three default reporter documented [here](reporters.md) or if you want to use a function
-you can see the documentation [here](reporter.md#custom-reporter)
+you can see the documentation [here](reporters.md#custom-reporter)
 
 ```javascript
 sendFeedback.userReporter('githubReporter', {
