@@ -2,11 +2,17 @@ language: node_js
 node_js:
   - "8"
 
-os: osx
-
 cache:
   directories:
     - node_modules
+    
+before_script:
+  # Generate a virtual framebuffer X server to collect Electron windows
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+
+  # Wait for Xvfb to start
+  - sleep 3
 
 script:
   - npm test
