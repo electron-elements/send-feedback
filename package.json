@@ -1,6 +1,6 @@
 {
   "name": "@electron-elements/send-feedback",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "send feeback - electron element for electron apps",
   "main": "lib/index.js",
   "repository": {
@@ -17,7 +17,8 @@
   "keywords": [
     "send-feedback",
     "electron",
-    "custom elements"
+    "custom elements",
+    "electron-elements"
   ],
   "author": "cPhost",
   "license": "MIT",
