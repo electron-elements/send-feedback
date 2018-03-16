@@ -1,0 +1,8 @@
+test
+docs/
+example-app
+.editorconfig
+.eslintrc
+.eslintignore
+.travis.yml
+karma.conf.js
