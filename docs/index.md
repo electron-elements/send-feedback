@@ -3,7 +3,7 @@
 embed a send feedback functionality quickly and as easily on electron side of
 code.
 
-You can looks at the example app by running `npm i && npm start`
+You can look at the example app by running `npm i && npm start`
 after cloning the repo to see how it works.
 
 ## Usage
@@ -11,7 +11,7 @@ after cloning the repo to see how it works.
 Requiring this would export a class that you will need to register as a custom elements.
 Doing this would give you a css designed but not yet working element:
 ```javascript
-const SendFeedback = require('send-feedback');
+const SendFeedback = require('@electron-elements/send-feedback');
 customElements.define('send-feedback', SendFeedback);
 ```
 
