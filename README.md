@@ -14,3 +14,6 @@ npm i --save @electron-elements/send-feedback
 ## Usage
 
 See the [docs for usage and documentation.](/docs)
+
+Do you have a electron element you want to add to this repo? 
+If so follow instructions at [electron-elements repo](https://github.com/electron-elements/electron-elements/blob/master/guides/moving-repo-into-org.md)
