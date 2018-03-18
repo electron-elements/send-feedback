@@ -6,7 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <send-issue-feedback></send-issue-feedback>
-  <script src="index.js"></script>
+  <section>
+    <select name="Customize Dropdown" id="customize-dropdown">
+      <option value="title">Customize Title</option>
+      <option value="title-label">Customize Title Input's label</option>
+      <option value="title-placeholder">Customize Title Input's placeholder</option>
+      <option value="textarea-label">Customize Textarea label</option>
+      <option value="textarea-placeholder">Customize Textarea placeholder</option>
+      <option value="button-label">Customize Button label</option>
+    </select>
+    <input type="text" class="customize-value">
+    <button class="customize-element">Customize</button>
+  </section>
+
+  <br><br>
+  
+  <send-feedback></send-feedback>
+  <script src="send-feedback.js"></script>
 </body>
 </html>
