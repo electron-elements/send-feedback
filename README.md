@@ -26,6 +26,11 @@ You just need to configure a reporter to use and done. You now have send feedbac
 functionality in your app. And once you have time you can totally modify the whole element's
 css and text.
 
+The default design of this element:
+<p align="center">
+  <img src="send-feedack.png" alt="send feedback design">
+</p>
+
 See the [docs for usage and documentation to customize your send feedback element.](/docs)
 
 Do you have a electron element you want to add to this repo? 
