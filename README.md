@@ -28,7 +28,7 @@ css and text.
 
 The default design of this element:
 <p align="center">
-  <img src="send-feedack.png" alt="send feedback design">
+  <img src="send-feedback.png" alt="send feedback design" />
 </p>
 
 See the [docs for usage and documentation to customize your send feedback element.](/docs)
