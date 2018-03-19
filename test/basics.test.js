@@ -54,6 +54,9 @@ describe('send-feedback', () => {
     assert.deepStrictEqual(textarea.getAttribute('placeholder'),
       'Write your feedback...');
     assert.deepStrictEqual(submitBtn.innerText, 'Send Feedback');
+    assert.deepStrictEqual(sendFeedback.loaderSuccessText, '&#10004; Feedback sent.');
+    assert.deepStrictEqual(sendFeedback.loaderErrorText,
+      '&#10060; Error sending feedback! try again..');
   });
 
   it('should update the element if attribute/property is set', () => {
