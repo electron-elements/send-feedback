@@ -47,7 +47,7 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
     if (checkRequest(req.body)) {
         // store the feedback someehwere
-        // ...
+        console.log('New feedback recived at ', new Date());
 
         // send 200 to indicate sucess
         res.status(200).end();
