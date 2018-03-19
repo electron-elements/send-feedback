@@ -22,9 +22,9 @@ Now add the `"start"` field to `package.json`.
 
 ## Writing backend
 
-Add this to your `index.js`
+Add this to template to `index.js` and setup saving feedback recived from webapp and
+a way to access them on website.
 ```javascript
-const fs = require('fs');
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
