@@ -1,34 +1,34 @@
 # customizing
 
-This documentation if for section that will guide you through the process,
+This documentation if for the section that will guide you through the process,
 of how to customize the `<send-feedback>` element.
 
-#### title
+### Title
 
-the title of element, the default is `Send Feedback`
-It can be changed by setting `title` attribute or property to new title.
+The title of an element, the default is `Send Feedback`
+It can be changed by setting `title` attribute or property to a new title.
 
-#### title label
+### Title Label
 
 The label for the title input, the default is `Title` 
-It can be changed by setting `title-label` attribute or `titleLabel` property.
+It can be changed by setting the `title-label` attribute or `titleLabel` property.
 
-#### title placeholder
+### Title Placeholder
 
 The placeholder of title input, the default is `Enter title`.
-It can be changed by settting `title-placholder` or `titlePlaceholder` property.
+It can be changed by setting `title-placeholder` or `titlePlaceholder` property.
 
-#### textarea label
+### Textarea Label
 
 The textarea input, the default label is `Send us your experience with this app:`.
 It can be changed by setting `textarea-label` or `textareaLabel` property.
 
-#### textarea placeholder
+### Textarea Placeholder
 
 The placeholder of textarea input, the default is `Write your feedback...`.
 It can be changed by setting `textarea-placeholder` or `textareaPlaceholder` property.
 
-#### button label
+### Button Label
 
 The text of submit button. the default is `Send Feedback`.
 It can be changed by setting `button-label` or `buttonLabel` property.
