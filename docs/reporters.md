@@ -1,5 +1,6 @@
 # reporters
-Reporter are the way the actual feedback is sent. It only called if the input is valid.
+The reporter of the send-feedback element is the way the actual feedback is sent.
+It is only called if the input is valid, after validating all the fields.
 
 ## Default reporters
 
