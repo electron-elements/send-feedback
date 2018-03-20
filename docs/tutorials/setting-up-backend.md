@@ -1,6 +1,6 @@
 ## Setting up backend
 
-Setting up backend that accepts feedback sent from app.
+This tutorial is for Setting up backend that accepts feedback sent from the app.
 You can use any backend you want for accepting feedback but this
 one will be written in node using express.
 
@@ -22,8 +22,8 @@ Now add the `"start"` field to `package.json`.
 
 ## Writing backend
 
-Add this to template to `index.js` and setup saving feedback recived from webapp and
-a way to access them on website.
+Add this template to `index.js` and setup saving feedback received from webapp and
+a way to access them on the website.
 ```javascript
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -67,6 +67,6 @@ app.listen(port, function() {
 
 ## Push your code to a server
 
-You will need a server up a running to accept the feedback sent from app.
-You can use [`heroku`](https://www.heroku.com/) or [`now`](https://zeit.co/now) which
-offer free services.
+You will need a server up a running to accept the feedback sent from the app.
+You can use services like [`heroku`](https://www.heroku.com/) or
+[`now`](https://zeit.co/now) which offer free services.
