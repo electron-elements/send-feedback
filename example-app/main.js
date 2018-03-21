@@ -5,7 +5,7 @@ let demoWin = null;
 app.on('ready', () => {
   demoWin = new BrowserWindow();
   demoWin.webContents.openDevTools();
-  demoWin.loadURL(`file:///${__dirname}/index.html`);
+  demoWin.loadURL(`file:///${__dirname}/send-feedback.html`);
 
   demoWin.on('closed', () => {
     demoWin = null;
