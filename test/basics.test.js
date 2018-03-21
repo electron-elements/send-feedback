@@ -6,12 +6,14 @@ const sendFeedback = document.createElement('send-feedback');
 document.body.appendChild(sendFeedback);
 
 describe('send-feedback', () => {
-  const title = sendFeedback.shadowRoot.querySelector('.title');
-  const titleInput = sendFeedback._titleInput;
-  const titleLabel = titleInput.previousElementSibling;
-  const textarea = sendFeedback._textarea;
-  const textareaLabel = textarea.previousElementSibling;
-  const submitBtn = sendFeedback.shadowRoot.querySelector('button');
+  const {
+    _title: title,
+    _titleInput: titleInput,
+    _titleLabel: titleLabel,
+    _textarea: textarea,
+    _textareaLabel: textareaLabel,
+    _button: submitBtn
+  } = sendFeedback;
 
   function getElement(selector) {
     const { shadowRoot } = sendFeedback;
