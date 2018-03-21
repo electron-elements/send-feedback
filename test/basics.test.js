@@ -1,5 +1,4 @@
 const assert = require('assert');
-const { remote: { app } } = require('electron');
 const SendFeedback = require('../lib');
 
 customElements.define('send-feedback', SendFeedback);
@@ -132,15 +131,11 @@ describe('send-feedback', () => {
     function customReporter(feedback, data) {
       const expectedFeedback = {
         title: title.value,
-        body: 'changed\n\n' +
-              '------------------------------------\n' +
-              `App version: ${app.getVersion()}\n` +
-              `Operating System: ${process.platform}`,
         logs: {}
       };
 
       reporterCalled = true;
-      for (let prop in feedback) {
+      for (let prop in expectedFeedback) {
         assert.deepStrictEqual(feedback[prop], expectedFeedback[prop]);
       }
 
