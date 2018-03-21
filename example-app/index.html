@@ -4,24 +4,27 @@
   <meta charset="utf-8" />
   <title>Report Issue - demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="send-feedback.css">
 </head>
 <body>
-  <section>
-    <select name="Customize Dropdown" id="customize-dropdown">
-      <option value="title">Customize Title</option>
-      <option value="title-label">Customize Title Input's label</option>
-      <option value="title-placeholder">Customize Title Input's placeholder</option>
-      <option value="textarea-label">Customize Textarea label</option>
-      <option value="textarea-placeholder">Customize Textarea placeholder</option>
-      <option value="button-label">Customize Button label</option>
-    </select>
-    <input type="text" class="customize-value">
-    <button class="customize-element">Customize</button>
-  </section>
-
-  <br><br>
+  <main>
+    <section>
+      <select name="Customize Dropdown" id="customize-dropdown">
+        <option value="title">Customize Title</option>
+        <option value="title-label">Customize Title Input's label</option>
+        <option value="title-placeholder">Customize Title Input's placeholder</option>
+        <option value="textarea-label">Customize Textarea label</option>
+        <option value="textarea-placeholder">Customize Textarea placeholder</option>
+        <option value="button-label">Customize Button label</option>
+      </select>
+      <input type="text" class="customize-value">
+      <button class="customize-element">Customize</button>
+    </section>
   
-  <send-feedback></send-feedback>
+    <br><br>
+    
+    <send-feedback></send-feedback>
+  </main>
   <script src="send-feedback.js"></script>
 </body>
 </html>
