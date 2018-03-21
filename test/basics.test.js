@@ -164,4 +164,44 @@ describe('send-feedback', () => {
     assert(titleLabel.classList.contains('error'));
     assert(textareaLabel.classList.contains('error'));
   });
+
+  it('does not spam (required) to label', () => {
+    const {
+      _titleInput: titleInput,
+      _textarea: textarea,
+      _textareaLabel: textareaLabel,
+      _titleLabel: titleLabel,
+      _button: submitBtn
+    } = sendFeedback;
+
+    titleInput.value = '';
+    textarea.value = '';
+    submitBtn.click();
+    submitBtn.click();
+
+    [titleLabel, textareaLabel].forEach((el) => {
+      const totalRequires = el.innerText.match(/\(required\)/g);
+      assert.deepStrictEqual(totalRequires.length, 1);
+    });
+  });
+
+  it('should remove error class and (required) from label when input is valid', () => {
+    const {
+      _titleInput: titleInput,
+      _textarea: textarea,
+      _textareaLabel: textareaLabel,
+      _titleLabel: titleLabel
+    } = sendFeedback;
+
+    titleInput.value = 'title';
+    textarea.value = 'textarea';
+
+    // dispatch input event to trigger validation
+    const inputEvent = new Event('input', { bubbles: false, cancelable: false });
+    titleInput.dispatchEvent(inputEvent);
+    textarea.dispatchEvent(inputEvent);
+
+    assert.deepStrictEqual(titleLabel.classList.contains('error'), false);
+    assert.deepStrictEqual(textareaLabel.classList.contains('error'), false);
+  });
 });
