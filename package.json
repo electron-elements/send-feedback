@@ -1,6 +1,6 @@
 {
   "name": "@electron-elements/send-feedback",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "send feeback - electron element that user send feedback of your app",
   "main": "lib/index.js",
   "repository": {
