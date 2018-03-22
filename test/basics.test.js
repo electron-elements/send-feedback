@@ -130,6 +130,7 @@ describe('send-feedback', () => {
     };
 
     let reporterCalled = false;
+    let feedbackSubmittedEventCalled = false;
     function customReporter(feedback, data) {
       const expectedFeedback = {
         title: title.value,
@@ -144,12 +145,17 @@ describe('send-feedback', () => {
       assert.deepEqual(customData, data);
     }
 
+    sendFeedback.addEventListener('feedback-submitted', () => {
+      feedbackSubmittedEventCalled = true;
+    });
+
     title.value = 'changed';
     textarea.value = 'changed';
     sendFeedback.useReporter(customReporter, customData);
-    await sendFeedback.submitFeedback();
+    await sendFeedback._onSubmitFeedback();
 
     assert(reporterCalled);
+    assert(feedbackSubmittedEventCalled);
   });
 
   it('does validation before calling reporter', () => {
