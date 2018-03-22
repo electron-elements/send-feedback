@@ -17,3 +17,11 @@ customizeButton.addEventListener('click', () => {
   const attr = customizeDropdown.value;
   sendFeedback.setAttribute(attr, cusomizeInput.value);
 });
+
+// by default use consoleReporer - console.log stuff out
+sendFeedback.useReporter(function({ title, body, logs }) {
+  console.log(title, body);
+  if (Object.keys(logs).length !== 0) {
+    console.log(logs);
+  }
+});
