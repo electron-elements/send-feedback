@@ -33,5 +33,9 @@ The default design of this element:
 
 See the [docs for usage and documentation to customize your send feedback element.](/docs)
 
+## Changelog
+
+See releases page it will contains all the [changelogs and info about new releases.](https://github.com/electron-elements/send-feedback/releases) 
+
 Do you have a electron element you want to add to this repo? 
 If so follow this guide at [electron-elements repo](https://github.com/electron-elements/electron-elements/blob/master/guides/add-an-electron-element-to-org.md)
