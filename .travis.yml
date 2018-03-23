@@ -5,7 +5,13 @@ node_js:
 cache:
   directories:
     - node_modules
-    
+
+before_install:
+  - npm i -g npm@5.7.1
+
+install:
+  - npm ci
+
 before_script:
   # Generate a virtual framebuffer X server to collect Electron windows
   - export DISPLAY=:99.0
