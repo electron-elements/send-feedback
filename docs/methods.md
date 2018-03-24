@@ -39,12 +39,12 @@ by setting attribute or by properties on element.
 
 #### `showLoader()`
 
-This will show a loader with text specified in [`loaderSuccessText`]().
+This will show a loader with text specified in [`loaderSuccessText`](#loadersucesstext).
 
 #### `hideLoader(error)`
 * error - Show error loader [optional] default is false.
 
-This will show a loader with text specifedi in [`loaderErrorText`]().
+This will show a loader with text specifedi in [`loaderErrorText`](#loadererrortext).
 
 #### `safeHideLoader(error)`
 * error - Show error loader [optional] default is false.
