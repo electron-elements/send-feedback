@@ -15,13 +15,38 @@ class exported if set to `true`.
 
 A property that you can set to add custom css.
 
-#### `useReporter`
+#### `loaderSuccessText`
+* default `✔ Feedback sent.`
 
-`useReporter(reporter: function)` or
-`useReporter(defaultReporter: string, data: object)`
+The text of loader when the reporter is successful in doing it's job.
+
+#### `loaderErrorText`
+* default `❌ Error sending feedback! try again..`
+
+The text of loader when the reporter fails in doing it's job.
+
+#### `useReporter(function || reporter, reporterData)`
+* function or reporter - This parameter must be a function of one of the
+[default reporter](reporters.md).
+* reporterData - could be anything that will be passed to reporter. Default reporter
+use objects. (This might change in future)
 
 You can pass in custom reporter that will be called with logs, body and title.
 logs are formatted as `{ filepath: fileContent }` filepath is whatever was pushed to [`logs`](#logs)
 
 For customizing elements see [customizing send-feedback element](customize.md), it can be customized
 by setting attribute or by properties on element.
+
+#### `showLoader()`
+
+This will show a loader with text specified in [`loaderSuccessText`]().
+
+#### `hideLoader(error)`
+* error - Show error loader [optional] default is false.
+
+This will show a loader with text specifedi in [`loaderErrorText`]().
+
+#### `safeHideLoader(error)`
+* error - Show error loader [optional] default is false.
+
+This will only hide loader if needed to be.
