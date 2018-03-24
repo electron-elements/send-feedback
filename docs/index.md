@@ -42,3 +42,19 @@ sendFeedback.userReporter('emailReporter', {
 ```
 
 Now when the submit button is clicked it works as expected.
+
+### Events
+
+This are the event triggered by the `<send-feedback>` element. Note that currently all
+the events are browser events and not node's event emitters. so you need to use:
+
+```javascript
+sendFeedback.addEventListener('<event>', ...);
+```
+
+#### `feedback-submitted`
+
+This event is only triggered when feedback is submitted, meaning when a reporter
+is done executing without throwing an error.
+
+
