@@ -1,5 +1,7 @@
 # send-feedback
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/electron-elements/send-feedback.svg)](https://greenkeeper.io/)
+
 This [electron-element](https://github.com/electron-elements/electron-elements#electron-elements) can be used to 
 send feedback from an electron app to a website. Currently this works well for reporting 
 issue to github's issue tracker, or any website that could accept user input sent from the app
