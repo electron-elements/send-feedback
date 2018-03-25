@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron-elements/send-feedback.git"
+    "url": "git+ssh://git@github.com:electron-elements/send-feedback.git"
   },
   "scripts": {
     "lint": "eslint . --cache",
@@ -20,7 +20,7 @@
     "custom elements",
     "electron-elements"
   ],
-  "author": "cPhost",
+  "author": "cPhost <priyankp390@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/electron-elements/send-feedback/issues"
