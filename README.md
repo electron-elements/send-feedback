@@ -1,4 +1,7 @@
-# send-feedback [![Greenkeeper badge](https://badges.greenkeeper.io/electron-elements/send-feedback.svg)](https://greenkeeper.io/)
+# send-feedback 
+[![npm](https://img.shields.io/npm/v/@electron-elements/send-feedback.svg?style=flat-square)](https://npmjs.org/package/@electron-elements/send-feedback)
+[![Travis](https://img.shields.io/travis/electron-elements/send-feedback.svg?style=flat-square)](https://travis-ci.org/electron-elements/send-feedback)
+[![Greenkeeper badge](https://img.shields.io/badge/Greenkepper-enabled-blue.svg?style=flat-square)](https://greenkeeper.io/)
 
 This [electron-element](https://github.com/electron-elements/electron-elements#electron-elements) can be used to 
 send feedback from an electron app to a website. Currently this works well for reporting 
