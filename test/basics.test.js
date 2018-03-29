@@ -212,4 +212,10 @@ describe('send-feedback', () => {
     assert.deepStrictEqual(titleLabel.classList.contains('error'), false);
     assert.deepStrictEqual(textareaLabel.classList.contains('error'), false);
   });
+
+  it('should clear the from out when clearFeedbackForm is called', () => {
+    sendFeedback.clearFeedbackForm();
+    assert.deepStrictEqual(titleInput.value, '');
+    assert.deepStrictEqual(textarea.value, '');
+  });
 });
