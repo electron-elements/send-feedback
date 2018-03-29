@@ -16,31 +16,30 @@ describe('send-feedback', () => {
   } = sendFeedback;
 
   function getElement(selector) {
-    const { shadowRoot } = sendFeedback;
     let element;
     switch (selector) {
       case 'title':
-        element = shadowRoot.querySelector('div.title');
+        element = title;
         break;
       case 'title-label':
       case 'titleLabel':
-        element = shadowRoot.querySelector('label');
+        element = titleLabel;
         break;
       case 'title-placeholder':
       case 'titlePlaceholder':
-        element = shadowRoot.querySelector('input');
+        element = titleInput;
         break;
       case 'textarea-label':
       case 'textareaLabel':
-        element = shadowRoot.querySelector('label:nth-of-type(2)');
+        element = textareaLabel;
         break;
       case 'textarea-placeholder':
       case 'textareaPlaceholder':
-        element = shadowRoot.querySelector('textarea');
+        element = textarea;
         break;
       case 'button-label':
       case 'buttonLabel':
-        element = shadowRoot.querySelector('button');
+        element = submitBtn;
     }
 
     return element;
