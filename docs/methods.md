@@ -26,7 +26,7 @@ The text of loader when the reporter is successful in doing it's job.
 The text of loader when the reporter fails in doing it's job.
 
 #### `useReporter(function || reporter, reporterData)`
-* function or reporter - This parameter must be a function of one of the
+* reporter: function or string - This parameter must be a function of one of the
 [default reporter](reporters.md).
 * reporterData - could be anything that will be passed to reporter. Default reporter
 use objects. (This might change in future)
