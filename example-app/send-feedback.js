@@ -1,3 +1,5 @@
+'use strict';
+
 const SendFeedback = require('../lib');
 const sendFeedback = document.querySelector('send-feedback');
 
