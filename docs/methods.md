@@ -49,4 +49,7 @@ This will show a loader with text specifedi in [`loaderErrorText`](#loadererrort
 #### `safeHideLoader(error)`
 * error - Show error loader [optional] default is false.
 
+#### `clearFeedbackForm()`
+This will clear the title input, and feedback textarea. This is called only when a reporter is successful.
+
 This will only hide loader if needed to be.
