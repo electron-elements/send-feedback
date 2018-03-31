@@ -40,5 +40,5 @@ See the [docs for usage and documentation to customize your send feedback elemen
 
 See releases page it will contains all the [changelogs and info about new releases.](https://github.com/electron-elements/send-feedback/releases) 
 
-Do you have a electron element you want to add to this repo? 
+Do you have an electron element you want to add to this org? 
 If so follow this guide at [electron-elements repo](https://github.com/electron-elements/electron-elements/blob/master/guides/add-an-electron-element-to-org.md)
