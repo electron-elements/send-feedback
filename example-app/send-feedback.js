@@ -27,3 +27,7 @@ sendFeedback.useReporter(function({ title, body, logs }) {
     console.log(logs);
   }
 });
+
+// sendFeedback.useReporter('browserReporter', {
+//   url: 'https://google.com'
+// });
