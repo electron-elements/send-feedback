@@ -42,11 +42,5 @@
   },
   "dependencies": {
     "@electron-elements/utils": "1.0.3"
-  },
-  "greenkeeper": {
-    "commitMessages": {
-      "dependencyUpdate": "package.json: update ${dependecy} to v${version}",
-      "devDependencyUpdate": "package.json: update ${dependecy} to v${version}"
-    }
   }
 }
