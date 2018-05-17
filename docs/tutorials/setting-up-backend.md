@@ -70,3 +70,6 @@ app.listen(port, function() {
 You will need a server up a running to accept the feedback sent from the app.
 You can use services like [`heroku`](https://www.heroku.com/) or
 [`now`](https://zeit.co/now) which offer free services.
+
+Note: This code is just a template, you should ensure your [backend's security checklist see here](http://expressjs.com/en/advanced/best-practice-security.html). Do not just copy and paste it and use it for production!
+
