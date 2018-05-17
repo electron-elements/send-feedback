@@ -3,17 +3,17 @@ This is documentation for all the methods on the `send-feedback` element.
 
 #### `logs`
 
-This is array by default, if you want to attach logs to body you can push the
+This is array by default, if you want to attach logs to body (The issue discription provided by user) you can push the
 file path to this array.
 
 #### `removeDefaultStyles`
 
-A property if set to true, will remove the default styles. Will be inherited from 
-class exported if set to `true`.
+A property if set to true, will remove the default styles. This property can be inherited from 
+constructor class of this custom element if set to `true`.
 
 #### `customStyles`
 
-A property that you can set to add custom css.
+A property that you can set to add custom css. 
 
 #### `loaderSuccessText`
 * default `✔ Feedback sent.`
