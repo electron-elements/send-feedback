@@ -1,7 +1,8 @@
 # customizing
 
-This documentation if for the section that will guide you through the process,
-of how to customize the `<send-feedback>` element.
+This documentation section  will guide you through the process,
+of how to customize the `<send-feedback>` element. The one of the great
+feature of custom elements.
 
 ### Title
 
