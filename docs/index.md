@@ -32,12 +32,12 @@ you can see the documentation [here](reporters.md#custom-reporter)
 
 ```javascript
 sendFeedback.userReporter('githubReporter', {
-  url: 'https://github.com/cPhost/send-feedback/issues/new'
+  url: 'https://github.com/priyankp10/send-feedback/issues/new'
 });
 
 // or use the email reporter
 sendFeedback.userReporter('emailReporter', {
-  email: 'my_email@cPhost.github.io'
+  email: 'my_email@priyankp10.github.io'
 });
 ```
 
