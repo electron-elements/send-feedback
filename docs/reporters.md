@@ -20,7 +20,8 @@ sendFeedback.useReporter('emailReporter', {
 
 #### `browserReporter`
 
-This will open up the url passed in to browser by passing body, title as parameter.
+This will open up the url specified in the browser, it will be like a `GET` request.
+You can specify the query parameter.
 ```javascript
 sendFeedback.useReporter('browserReporter', {
   url: 'https://example.com',
