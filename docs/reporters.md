@@ -53,7 +53,7 @@ sendFeedback.useReporter('postRequestReporter', {
 });
 ```
 
-If might want customize with loader, its text can be updated:
+The loader shown, can be customized:
 ```javascript
 // default is &#10004; Feedback sent.
 // &#10060; -> ✔
