@@ -33,7 +33,7 @@ sendFeedback.useReporter('browserReporter', {
 ### `githubReporter`
 
 This will open up the browser to issue tracker. The title, body will be set and
-log will be markdowned.
+it will be fromatted with markdown.
 ```javascript
 sendFeedback.useReporter('githubReporter', {
   url: 'https://github.com/<username>/<repo>/issues/new'
