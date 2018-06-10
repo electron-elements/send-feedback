@@ -65,7 +65,7 @@ sendFeedback.loaderErrorText = 'your desired text';
 ```
 
 You can take a look this [setting up backend tutorial](/tutorials/setting-up-backend.md)
-for setting up a backend that accpets feedback sent from a app.
+for setting up a backend that accpets feedback sent from the app.
 
 # Custom reporter
 You can pass a function to be used as a reporter. The function will be called with
