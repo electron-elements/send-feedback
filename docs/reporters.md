@@ -42,8 +42,9 @@ sendFeedback.useReporter('githubReporter', {
 
 ### `postRequestReporter`
 
-This reporter can send a post request in background to a server. It will show a reporter
-a loader when the request in pending.
+This reporter can send a post request in background to a server.
+The `send-feedback` element will show a reporter a loader until the
+feedback is successfully sent.
 ```
 sendFeedback.useReporter('postRequestReporter', {
   url: 'url of your server',
