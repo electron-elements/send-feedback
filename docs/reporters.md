@@ -6,7 +6,7 @@ It is only called if the input is valid, after validating all the fields.
 
 #### `emailReporter`
 
-This reporter will open up the default email app of the operating system and have it ready to be sent to address
+This reporter will open up the default email app of the operating system, and have the email ready to be sent to address
 you will specify.
 
 Use [`emailReporter.useReporter`](methods.md#useReporter) to register a reporter.
