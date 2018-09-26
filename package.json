@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git+ssh://git@github.com:electron-elements/send-feedback.git"
   },
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
     "lint": "eslint . --cache",
     "lint-fix": "eslint . --fix --cache",
