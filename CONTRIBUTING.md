@@ -2,13 +2,13 @@
 
 Every contribution is greatly welcomed.
 
-## commit msg
-Your commit msg must be well summarize and consise. For more trivial change add breif descripition
-to your commit message. Your commit should start with part of code and summary of the change as showed below.
+# Install dependencies
+First install npm dependecies.
+```
+npm i
+```
 
-```
-docs: document new changes to function
-```
+After that, you can run `npm start` to run electron app to test the changes you make.
 
 ## Testing your code and running linter
 Before you make a PR make sure that test and linter passes.
