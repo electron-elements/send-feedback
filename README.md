@@ -24,17 +24,17 @@ const sendFeedback = document.createElement('send-feedback');
 document.body.appendChild(sendFeedback);
 ```
 
-This will have basic UI, ready to go see demo app by running `npm i && npm start`. 
-You just need to configure a reporter to use and done. You now have send feedback 
-functionality in your app. And once you have time you can totally modify the whole element's
-css and text.
-
-The default design of this element:
+The default design of this element, right out of the box looks like:
 <p align="center">
   <img src="send-feedback.png" alt="send feedback design" />
 </p>
 
-See the [docs for usage and documentation to customize your send feedback element.](/docs)
+The design of the element can be futher customized to fit your needs. See the [docs for usage and documentation to customize your send feedback element.](/docs)
+
+Lastly, you need to configure how the send-feedback will report the feedback back to you. We support
+reporting the feedback to email, github, or the brower. Additionally, you can also do a post request
+to your server with the feedback. You can also add you own reporter if the the reporters we also provide
+do not fit you needs. See the [reporter docs for more info](docs/reporters.md).
 
 ## Changelog
 
