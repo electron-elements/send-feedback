@@ -29,12 +29,12 @@ The default design of this element, right out of the box looks like:
   <img src="send-feedback.png" alt="send feedback design" />
 </p>
 
-The design of the element can be futher customized to fit your needs. See the [docs for usage and documentation to customize your send feedback element.](/docs)
+The design of the element can be futher customized to fit your needs. See the [docs for usage and documentation to customize your send feedback element.](./docs)
 
 Lastly, you need to configure how the send-feedback will report the feedback back to you. We support
 reporting the feedback to email, github, or the brower. Additionally, you can also do a post request
 to your server with the feedback. You can also add you own reporter if the the reporters we also provide
-do not fit you needs. See the [reporter docs for more info](docs/reporters.md).
+do not fit you needs. See the [reporter docs for more info](./docs/reporters.md).
 
 ## Changelog
 
