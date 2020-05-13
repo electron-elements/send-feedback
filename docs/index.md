@@ -63,4 +63,10 @@ sendFeedback.addEventListener('<event>', ...);
 This event is only triggered when feedback is submitted, meaning when a reporter
 is done executing without throwing an error.
 
+#### `feedback-cancelled`
+
+This even triggered when the user hits the cancel button. By default
+this button is now shown, you need to enable it if you want to use it.
+See [the docs on it](./customizing.md#cancel-button-label) for more info!
+
 
