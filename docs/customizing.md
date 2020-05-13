@@ -34,3 +34,7 @@ It can be changed by setting `textarea-placeholder` or `textareaPlaceholder` pro
 The text of submit button. the default is `Send Feedback`.
 It can be changed by setting `button-label` or `buttonLabel` property.
 
+### Close Button Label
+
+The text of close button. the default is `Close`.
+It can be changed by setting `closebtn-label` or `closeButton` property.
