@@ -100,7 +100,7 @@ describe('send-feedback', () => {
         assert.deepStrictEqual(feedback[prop], expectedFeedback[prop]);
       }
 
-      assert.deepEqual(customData, data);
+      assert.deepStrictEqual(customData, data);
     }
 
     sendFeedback.addEventListener('feedback-submitted', () => {
