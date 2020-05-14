@@ -1,34 +1,36 @@
 # send-feedback
-`<send-feedback>` is a electron element. It will provide a quick way to
-embed and send feedback functionality quickly and as easily on electron side of
-code.
+`<send-feedback>` is a electron element. It is a quick way to
+embed the send feedback functionality quickly in your app.
 
 You can look at the example app by running `npm i && npm start`
 after cloning the repo to see how it works.
 
 ## Usage
 
-Requiring this would export a class that you will need to register as a custom element.
-Doing this would give you a css designed but not yet working element:
+The module exports a `SendFeedback` class that you need to define as a
+custom element. You also have the flexibilty to choose the tag name.
 ```javascript
 const SendFeedback = require('@electron-elements/send-feedback');
 customElements.define('send-feedback', SendFeedback);
 ```
 
-By default, this has responsive design out of the box. But if you want to customize the
-element's css styles you can do something like:
+By default, the element has responsive design out of the box. But if you want to customize
+the design of the element you can do:
 ```javascript
 const sendFeedback = document.querySelector('send-feedback');
 sendFeedback.customStyles = `* { padding: 20px }`;
 ```
 
-to remove defaults styles you can do `sendFeedback.removeDefaultStyles = true`;
+To remove default styles you can do `sendFeedback.removeDefaultStyles = true`. **Note:** This
+will remove all the styles we ship with this custom elements, which most of the times is not needed,
+because you can add custom css to tweak some design as show above.
 
-Once you feel like designs are in place or you like the default designs.
-You need to use a `reporter` by calling `sendFeedback.useReporter`, for this example lets use
-the `githubReporter`. A reporter is what gets called when the submit/send button is clicked.
-There are three default reporter documented [here](reporters.md) or if you want to use a function
-you can see the documentation [here](reporters.md#custom-reporter)
+Once you feel like designs are in place or you like the default design.
+You need to use a `reporter` by calling `sendFeedback.useReporter`, for this example we use
+the `githubReporter` and `emailReporter`. A reporter is what gets called when the submit/send button is clicked.
+There are three default reporter documented [here](reporters.md) which also allows you send feedback
+to your server if you wish. And, if you want to write your own reporter
+check out the documentation [here](reporters.md#custom-reporter)
 
 ```javascript
 sendFeedback.userReporter('githubReporter', {
