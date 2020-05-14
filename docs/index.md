@@ -45,6 +45,10 @@ sendFeedback.userReporter('emailReporter', {
 
 Now when the submit button is clicked it works as expected.
 
+### Methods
+
+To see all the methods avalible to you checkout the [methods docs](./methods.md).
+
 ### Events
 
 This are the event triggered by the `<send-feedback>` element. Note that currently all
