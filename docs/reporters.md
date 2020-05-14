@@ -68,20 +68,22 @@ You can take a look this [setting up backend tutorial](/tutorials/setting-up-bac
 for setting up a backend that accpets feedback sent from the app.
 
 # Custom reporter
-You can pass a function to be used as a reporter. The function will be called with
-an object and data if you passed data when calling `useReporter`.
+If none of the default reporters fit your needs, you can write your own reporter.
+This can be done by passing a function to `sendFeedback.useReporter`. And when user clicks
+the send feedback button the function will be called with the following data as an object:
+
 ```javascript
 {
-  title, // title the user entered
-  body,  // body user entered
-  logs // pre read logs as filename and file content
+  title, // String. The title the user entered
+  body,  // String. The details user entered
+  logs // Object. Pre read logs with filename as key and file content as value.
 }
 ```
 
-If you custom reporter need to use the built in loader you can show the loader using
-`this.showLoader()` in the custom function, and to stop the loader `this.hideLoader()`
-if you want to show error you need to pass `true` as a argument indicating an error had
-occured `this.hideLoader(true)`.
+If your custom reporter need to use the built in loader, if your code is waiting something
+that takes time, you can show the loader using `this.showLoader()` in the custom function,
+and to stop the loader `this.hideLoader()`. If you want to show error you need to pass `true`
+as a argument indicating an error had occured `this.hideLoader(true)`.
 
-Note: the filename if the path passed into the `sendFeedback.logs` array.
+Note: The filename if the path passed into the `sendFeedback.logs` array.
 see [documentation of logs for more info.](methods.md#logs)
