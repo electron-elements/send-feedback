@@ -37,10 +37,10 @@ It can be changed by setting `button-label` or `buttonLabel` property.
 
 ### Cancel button
 If you use this element as a modal and wish to have a cancel button in
-the UI set the `showCancelButton` property to true or use `show-cancel-button` attribute.
-Then, when a user clicks the cancel button, we will emit a `feedback-cancelled`
-event so you can update your UI accordingly. See the [events section](./index.md#events)
-on how to setup a event listener to catch the event.
+the UI set the `showCancelButton` property or the `show-cancel-button` attribute
+to `"show"`. Then, when a user clicks the cancel button, we will emit a 
+`feedback-cancelled` event so you can update your UI accordingly. See the
+[events section](./index.md#events) on how to setup a event listener to catch the event.
 
 ### Cancel Button Label
 
