@@ -6,7 +6,7 @@ const { app, BrowserWindow } = electron;
 let demoWin = null;
 app.on('ready', () => {
   demoWin = new BrowserWindow({
-    width: 1020,
+    width: 1150,
     height: 600
   });
 
