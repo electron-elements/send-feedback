@@ -44,6 +44,6 @@
     "mocha": "^7.1.2"
   },
   "dependencies": {
-    "@electron-elements/utils": "1.0.3"
+    "@electron-elements/utils": "1.0.4"
   }
 }
