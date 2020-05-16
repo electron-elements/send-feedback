@@ -1,8 +1,14 @@
 # customizing
 
-This documentation section  will guide you through the process,
+This documentation section will guide you through the process,
 of how to customize the `<send-feedback>` element. The one of the great
 feature of custom elements.
+
+### Customize the design
+There are two was to provide custom css. Through a css file or
+by directly providing css. Set the `customStylesheet` to the link
+of the stylesheet to use it. You can also set the `customStyles` to
+css you want, for example, `sendFeedback.customStyle = ':host { padding: 10px; }'`.
 
 ### Title
 

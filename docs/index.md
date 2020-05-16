@@ -14,16 +14,17 @@ const SendFeedback = require('@electron-elements/send-feedback');
 customElements.define('send-feedback', SendFeedback);
 ```
 
-By default, the element has responsive design out of the box. But if you want to customize
-the design of the element you can do:
+By default, the element has responsive design out of the box. But if you want
+to customize the design of the element you can do:
 ```javascript
 const sendFeedback = document.querySelector('send-feedback');
+sendFeedback.customStylesheet = `custom.css`; // link to custom css file!
+// OR
 sendFeedback.customStyles = `* { padding: 20px }`;
 ```
 
 To remove default styles you can do `sendFeedback.removeDefaultStyles = true`. **Note:** This
-will remove all the styles we ship with this custom elements, which most of the times is not needed,
-because you can add custom css to tweak some design as show above.
+will remove all the styles we ship with this custom elements, which most of the times is not needed, because you can add custom css to tweak some design as show above.
 
 Once you feel like designs are in place or you like the default design.
 You need to use a `reporter` by calling `sendFeedback.useReporter`, for this example we use
