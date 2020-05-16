@@ -7,7 +7,10 @@ let demoWin = null;
 app.on('ready', () => {
   demoWin = new BrowserWindow({
     width: 1150,
-    height: 600
+    height: 600,
+    webPreferences: {
+      nodeIntegration: true,
+    }
   });
 
   demoWin.webContents.openDevTools();
