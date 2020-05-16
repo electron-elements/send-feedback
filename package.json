@@ -1,7 +1,7 @@
 {
   "name": "@electron-elements/send-feedback",
-  "version": "1.0.8",
-  "description": "send feeback - electron element that user send feedback of your app",
+  "version": "2.0.0",
+  "description": "Send Feedback allows you to incorporate feedback function in your app.",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
