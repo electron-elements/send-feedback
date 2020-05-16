@@ -23,7 +23,7 @@
     "custom elements",
     "electron-elements"
   ],
-  "author": "cPhost <priyankp390@gmail.com>",
+  "author": "Priyank Patel <priyankp390@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/electron-elements/send-feedback/issues"
