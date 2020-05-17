@@ -1,6 +1,6 @@
 {
   "name": "@electron-elements/send-feedback",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Send Feedback allows you to incorporate feedback function in your app.",
   "main": "lib/index.js",
   "repository": {
