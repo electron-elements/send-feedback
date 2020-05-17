@@ -9,7 +9,7 @@ app.on('ready', () => {
     width: 1150,
     height: 600,
     webPreferences: {
-      nodeIntegration: true,
+      nodeIntegration: true
     }
   });
 
