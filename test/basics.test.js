@@ -14,7 +14,8 @@ describe('send-feedback', () => {
     _titleLabel: titleLabel,
     _textarea: textarea,
     _textareaLabel: textareaLabel,
-    _button: submitBtn
+    _button: submitBtn,
+    _cancel: cancelBtn
   } = sendFeedback;
 
   function getElement(selector) {
@@ -42,6 +43,10 @@ describe('send-feedback', () => {
       case 'button-label':
       case 'buttonLabel':
         element = submitBtn;
+        break;
+      case 'cancel-label':
+      case 'cancelLabel':
+        element = cancelBtn;
     }
 
     return element;
