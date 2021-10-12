@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/electron-elements/send-feedback#readme",
   "devDependencies": {
-    "electron": "^8.3.0",
+    "electron": "^11.5.0",
     "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.20.2",
