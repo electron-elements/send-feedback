@@ -41,7 +41,7 @@
     "karma-electron": "^6.3.0",
     "karma-mocha": "^2.0.1",
     "karma-mocha-reporter": "^2.2.5",
-    "mocha": "^7.1.2"
+    "mocha": "^10.2.0"
   },
   "dependencies": {
     "@electron-elements/utils": "1.0.4"
